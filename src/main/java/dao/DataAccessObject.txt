@@ -1,0 +1,1 @@
+-- mô tả các lớp truy vấn dữ liệu với server

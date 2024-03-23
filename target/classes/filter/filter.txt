@@ -1,0 +1,3 @@
+
+---
+----Nhằm lọc và kiểm tra đã đăng nhập chưa , nếu chưa thì chuyển hướng về trang login 

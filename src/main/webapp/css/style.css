@@ -1,0 +1,37 @@
+.text-primary {
+	color: #FF9A00 !important;
+}
+
+.btn-primary {
+	background-color: #FF9A00 !important;
+	border-color: #FF9A00 !important;
+}
+
+.text-green {
+	color: #0d6efd  !important;
+	border-color: none;
+}
+
+.page-link {
+	color: #0d6efd !important;
+	border-color: none;
+}
+
+.card {
+	transition: transform 0.3s ease;
+}
+
+.card:hover {
+	transform: translateY(-10px);
+	/* Dịch chuyển thẻ card lên 10px khi hover */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ khi hover */
+}
+a{
+	text-decoration: none !important;
+}
+
+body {
+	background-image: url(/images/hero-bg.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}

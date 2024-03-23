@@ -1,0 +1,48 @@
+https://stackoverflow.com/questions/7382607/how-to-load-css-file-into-jsp
+
+
+///session
+  <section class="bg-light py-5">
+                <div class="container px-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-xxl-8">
+                            <div class="text-center my-5">
+                                <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
+                                <p class="lead fw-light mb-4">My name is Start Bootstrap and I help brands grow.</p>
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dolorum itaque qui unde quisquam consequatur autem. Eveniet quasi nobis aliquid cumque officiis sed rem iure ipsa! Praesentium ratione atque dolorem?</p>
+                                <div class="d-flex justify-content-center fs-2 gap-4">
+                                    <a class="text-gradient" href="#!"><i class="bi bi-twitter"></i></a>
+                                    <a class="text-gradient" href="#!"><i class="bi bi-linkedin"></i></a>
+                                    <a class="text-gradient" href="#!"><i class="bi bi-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+            <div
+					class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+					<a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder"
+						href="resume.html">Đăng Ký</a> <a
+						class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder"
+						href="projects.html">Đăng Nhập</a>
+				</div>
+				
+				
+				
+				<div class="container">
+		<div class="row justify-content-md-center">
+			<div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+			<hr class="w-100 mx-auto mb-2 mb-xl-9 border-dark-subtle">
+				<h1 class="mb-4 display-5 text-sm-center">LaughHub</h1>
+				<p class="text-secondary mb-2 text-sm-center">Hãy đắm chìm trong thế
+					giới của những câu chuyện thú vị, những cảnh quay đẹp mắt, và những
+					giai điệu sâu lắng. Với sự đa dạng về nội dung trên các nền tảng
+					video, bạn luôn có lựa chọn phong phú để thỏa mãn sở thích và quan
+					tâm của mình.</p>
+				<hr class="w-100 mx-auto mb-2 mb-xl-9 border-dark-subtle">
+			</div>
+		</div>
+	</div>

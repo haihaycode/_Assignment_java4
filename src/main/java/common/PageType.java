@@ -1,0 +1,13 @@
+package common;
+
+public enum PageType {
+  HOME_PAGE,
+  LOGIN,
+  REGISTER,
+  FORGOTPASS,
+  INFORACCOUNT,
+  UPDATEPASS,
+  FAVORITE,
+  VIDEOCLIENT,
+  ADMIN_DASHBOARD
+}
