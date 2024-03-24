@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<section class="py-5" style="margin-top: 80px">
+<section class="" style="margin-top: 80px;padding-top: 50px">
     <div class="container overflow-hidden">
         <div class="row justify-content-between align-items-center">
             <div class="col-md-auto">

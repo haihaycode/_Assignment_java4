@@ -38,7 +38,7 @@
 	<jsp:include page="/views/admin/partials/breadcrumb.jsp"></jsp:include>
 
 	<!-- main -->
-	<header class="py-5">
+	<header style="padding-top: 10px">
 		<c:if test="${contentPage != null }">
 			<jsp:include page="${contentPage.contentUrl }"></jsp:include>
 		</c:if>

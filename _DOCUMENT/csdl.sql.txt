@@ -1,0 +1,101 @@
+﻿create database laughhub;
+create table users(
+ id varchar(255) not null primary key ,
+ password varchar(255) not null,
+ email varchar(255) not null,
+ fullname varchar(255) not null,
+ avatar text,
+ admin bit not null
+)
+go
+create table favorite(
+    id int identity(1,1) primary key not null,
+	userid varchar(255) not null,--fk
+	videoid varchar(255) not null,--fk
+	likedate datetime not null
+)
+go
+create table share(
+    id int identity(1,1) primary key not null,
+	userid varchar(255) not null,--fk
+	videoid varchar(255) not null,--fk
+	emails text ,
+	sharedate datetime not null
+)
+go
+create table video(
+    id varchar(255) not null primary key ,
+	title ntext not null,
+	poster text ,
+	views int not null,
+	description text ,
+	videodate datetime not null,
+	active bit not null
+)
+
+ALTER TABLE favorite
+ADD CONSTRAINT fk_favorite_user
+FOREIGN KEY (userid) REFERENCES users(id);
+
+ALTER TABLE favorite
+ADD CONSTRAINT fk_favorite_video
+FOREIGN KEY (videoid) REFERENCES video(id);
+
+ALTER TABLE share
+ADD CONSTRAINT fk_share_user
+FOREIGN KEY (userid) REFERENCES users(id);
+
+ALTER TABLE share
+ADD CONSTRAINT fk_share_video
+FOREIGN KEY (videoid) REFERENCES video(id);
+
+
+-- Chèn dữ liệu ảo vào bảng users
+INSERT INTO users (id, password, email, fullname, avatar, admin) VALUES
+('user1', 'password1', 'user1@example.com', 'User One', 'avatar1.jpg', 0),
+('user2', 'password2', 'user2@example.com', 'User Two', 'avatar2.jpg', 0),
+('user3', 'password3', 'user3@example.com', 'User Three', 'avatar3.jpg', 0),
+('admin1', 'adminpass1', 'admin1@example.com', 'Admin One', 'admin_avatar1.jpg', 1),
+('admin2', 'adminpass2', 'admin2@example.com', 'Admin Two', 'admin_avatar2.jpg', 1),
+('user4', 'password4', 'user4@example.com', 'User Four', 'avatar4.jpg', 0),
+('user5', 'password5', 'user5@example.com', 'User Five', 'avatar5.jpg', 0),
+('user6', 'password6', 'user6@example.com', 'User Six', 'avatar6.jpg', 0),
+('user7', 'password7', 'user7@example.com', 'User Seven', 'avatar7.jpg', 0);
+
+-- Chèn dữ liệu ảo vào bảng video
+INSERT INTO video (id, title, poster, views, description, videodate, active) VALUES
+('video1', 'Funny Cats Compilation', 'cat_poster.jpg', 10000, 'A compilation of funny cat videos.', GETDATE(), 1),
+('video2', 'Epic Fail Compilation', 'fail_poster.jpg', 8000, 'Compilation of epic fails from around the world.', GETDATE(), 1),
+('video3', 'Stand-up Comedy Show', 'comedy_poster.jpg', 12000, 'A hilarious stand-up comedy show.', GETDATE(), 1),
+('video4', 'Prank Compilation', 'prank_poster.jpg', 6000, 'Compilation of funny pranks.', GETDATE(), 1),
+('video5', 'Funny Babies Compilation', 'baby_poster.jpg', 9000, 'Compilation of cute and funny baby moments.', GETDATE(), 1),
+('video6', 'Best Vines Compilation', 'vines_poster.jpg', 7500, 'Compilation of the best Vine videos.', GETDATE(), 1),
+('video7', 'Animal Fails Compilation', 'animal_fail_poster.jpg', 8500, 'Compilation of hilarious animal fails.', GETDATE(), 1),
+('video8', 'Magic Tricks Revealed', 'magic_poster.jpg', 6200, 'A revealing look at how magic tricks are done.', GETDATE(), 1),
+('video9', 'Cooking Fails Compilation', 'cooking_fail_poster.jpg', 7800, 'Compilation of cooking mishaps and disasters.', GETDATE(), 1),
+('video10', 'Best Sports Moments', 'sports_poster.jpg', 11000, 'Compilation of the greatest sports moments.', GETDATE(), 1);
+
+-- Chèn dữ liệu ảo vào bảng favorite
+INSERT INTO favorite (userid, videoid, likedate) VALUES
+('user1', 'video1', GETDATE()),
+('user1', 'video2', GETDATE()),
+('user2', 'video3', GETDATE()),
+('user3', 'video4', GETDATE()),
+('user4', 'video5', GETDATE()),
+('user5', 'video6', GETDATE()),
+('user6', 'video7', GETDATE()),
+('user7', 'video8', GETDATE()),
+('admin1', 'video9', GETDATE()),
+('admin2', 'video10', GETDATE());
+
+-- Chèn dữ liệu ảo vào bảng share
+INSERT INTO share (userid, videoid, emails, sharedate) VALUES
+('user1', 'video2', 'friend1@example.com, friend2@example.com', GETDATE()),
+('user2', 'video3', 'friend3@example.com, friend4@example.com', GETDATE()),
+('user3', 'video4', 'friend5@example.com, friend6@example.com', GETDATE()),
+('user4', 'video5', 'friend7@example.com, friend8@example.com', GETDATE()),
+('user5', 'video6', 'friend9@example.com, friend10@example.com', GETDATE()),
+('user6', 'video7', 'friend11@example.com, friend12@example.com', GETDATE()),
+('user7', 'video8', 'friend13@example.com, friend14@example.com', GETDATE()),
+('admin1', 'video9', 'friend15@example.com, friend16@example.com', GETDATE()),
+('admin2', 'video10', 'friend17@example.com, friend18@example.com', GETDATE());

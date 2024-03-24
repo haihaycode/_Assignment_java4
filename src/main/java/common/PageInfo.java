@@ -57,18 +57,24 @@ public class PageInfo {
 				new PageInfo(" Đăng ký - Tập hợp các video - clip mới nhất ", "/views/client/layout/register.jsp", ""));
 		map.put(PageType.LOGIN,
 				new PageInfo(" Đăng nhập - Tập hợp các video - clip mới nhất ", "/views/client/layout/login.jsp", ""));
-		map.put(PageType.FORGOTPASS,
-				new PageInfo(" Quên mật khẩu ? - Tập hợp các video - clip mới nhất ", "/views/client/layout/forgotpass.jsp", ""));
-		map.put(PageType.INFORACCOUNT,
-				new PageInfo(" Cập Nhật thông tin - Tập hợp các video - clip mới nhất ", "/views/client/layout/inforaccount.jsp", ""));
-		map.put(PageType.UPDATEPASS,
-				new PageInfo(" Cập Nhật mật khẩu - Tập hợp các video - clip mới nhất ", "/views/client/layout/updatepass.jsp", ""));
-		map.put(PageType.FAVORITE,
-				new PageInfo(" Trang yêu thích - Tập hợp các video - clip mới nhất ", "/views/client/layout/favorite.jsp", ""));
+		map.put(PageType.FORGOTPASS, new PageInfo(" Quên mật khẩu ? - Tập hợp các video - clip mới nhất ",
+				"/views/client/layout/forgotpass.jsp", ""));
+		map.put(PageType.INFORACCOUNT, new PageInfo(" Cập Nhật thông tin - Tập hợp các video - clip mới nhất ",
+				"/views/client/layout/inforaccount.jsp", ""));
+		map.put(PageType.UPDATEPASS, new PageInfo(" Cập Nhật mật khẩu - Tập hợp các video - clip mới nhất ",
+				"/views/client/layout/updatepass.jsp", ""));
+		map.put(PageType.FAVORITE, new PageInfo(" Trang yêu thích - Tập hợp các video - clip mới nhất ",
+				"/views/client/layout/favorite.jsp", ""));
 		map.put(PageType.VIDEOCLIENT,
 				new PageInfo(" Video - Tập hợp các video - clip mới nhất ", "/views/client/layout/video.jsp", ""));
-		map.put(PageType.ADMIN_DASHBOARD,
-				new PageInfo(" Trang Quản Lý - Tập hợp các video - clip mới nhất ", "/views/admin/layout/home.jsp", ""));
+		map.put(PageType.ADMIN_DASHBOARD, new PageInfo(" Trang Quản Lý - Tập hợp các video - clip mới nhất ",
+				"/views/admin/layout/home.jsp", ""));
+		map.put(PageType.ADMIN_VIDEO, new PageInfo(" Trang Quản lý video - Tập hợp các video - clip mới nhất ",
+				"/views/admin/layout/videos.jsp", ""));
+		map.put(PageType.ADMIN_USER, new PageInfo(" Trang Quản lý người dùng - Tập hợp các video - clip mới nhất ",
+				"/views/admin/layout/users.jsp", ""));
+		map.put(PageType.ADMIN_REPORTS, new PageInfo(" Trang Thống kê - báo cáo - Tập hợp các video - clip mới nhất ",
+				"/views/admin/layout/reports.jsp", ""));
 	}
 
 	// hàm chuyển trang client
